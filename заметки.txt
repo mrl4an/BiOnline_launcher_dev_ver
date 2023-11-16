@@ -1,0 +1,3 @@
+отправка логов в базу данных ника в логах C:\Users\c920\AppData\LocalLow\Ludeon Studios\RimWorld by Ludeon Studios\OnlineCity
+определить способ запроса API,socket, база или др
+отправка бед значений

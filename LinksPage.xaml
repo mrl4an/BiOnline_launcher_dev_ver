@@ -1,0 +1,58 @@
+﻿<Page x:Class="BiOnline_launcher_dev_ver.LinksPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BiOnline_launcher_dev_ver"
+      mc:Ignorable="d" 
+      d:DesignHeight="642" d:DesignWidth="765"
+      Title="LinksPage">
+
+    <Grid x:Name="MainGrid">
+        <Grid x:Name="box1_Grid" HorizontalAlignment="Left" Height="186" Margin="26,26,0,0" VerticalAlignment="Top" Width="341">
+            <Rectangle HorizontalAlignment="Center" Height="186" VerticalAlignment="Top" Width="341" Fill="#B21D1D1D" RadiusX="10" RadiusY="10"/>
+            <Image HorizontalAlignment="Left" Height="60" Margin="26,26,0,0" VerticalAlignment="Top" Width="60" Source="/assets/icon/Group 56.png"/>
+            <Grid x:Name="box1_btn_Grid" HorizontalAlignment="Left" Height="30" Margin="203,41,0,0" VerticalAlignment="Top" Width="112" MouseDown="box1_btn_Grid_MouseDown">
+                <Rectangle x:Name="VK_sub_Rect" HorizontalAlignment="Center" Height="30" VerticalAlignment="Center" Width="112" Fill="#FF5865F2" RadiusX="10" RadiusY="10"/>
+                <Label x:Name="box1_lbl" Content="Вступить" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Grid>
+            <Grid x:Name="box1_grid_Desc" HorizontalAlignment="Center" Height="80" Margin="0,96,0,0" VerticalAlignment="Top" Width="289">
+                <Rectangle HorizontalAlignment="Center" Height="80" VerticalAlignment="Center" Width="289" Fill="#FF292929" RadiusX="10" RadiusY="10"/>
+            </Grid>
+        </Grid>
+        <Grid x:Name="box2_Grid" HorizontalAlignment="Left" Height="186" Margin="409,26,0,0" VerticalAlignment="Top" Width="341">
+            <Rectangle HorizontalAlignment="Center" Height="186" VerticalAlignment="Top" Width="341" Fill="#B21D1D1D" RadiusX="10" RadiusY="10"/>
+            <Image HorizontalAlignment="Left" Height="60" Margin="26,26,0,0" VerticalAlignment="Top" Width="60" Source="/assets/icon/Group 59.png"/>
+            <Grid x:Name="box2_btn_Grid" HorizontalAlignment="Left" Height="30" Margin="203,41,0,0" VerticalAlignment="Top" Width="112" MouseDown="box2_btn_Grid_MouseDown">
+                <Rectangle x:Name="Boosty_sub_Rect" HorizontalAlignment="Center" Height="30" VerticalAlignment="Center" Width="112" Fill="#FFF15E2C" RadiusX="10" RadiusY="10"/>
+                <Label x:Name="box2_lbl" Content="Подписаться" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Grid>
+            <Grid x:Name="box2_grid_Desc" HorizontalAlignment="Center" Height="80" Margin="0,96,0,0" VerticalAlignment="Top" Width="289">
+                <Rectangle HorizontalAlignment="Center" Height="80" VerticalAlignment="Center" Width="289" Fill="#FF292929" RadiusX="10" RadiusY="10"/>
+            </Grid>
+        </Grid>
+        <Grid x:Name="box3_Grid" HorizontalAlignment="Left" Height="186" Margin="26,237,0,0" VerticalAlignment="Top" Width="341">
+            <Rectangle HorizontalAlignment="Center" Height="186" VerticalAlignment="Top" Width="341" Fill="#B21D1D1D" RadiusX="10" RadiusY="10"/>
+            <Image HorizontalAlignment="Left" Height="60" Margin="26,26,0,0" VerticalAlignment="Top" Width="60" Source="/assets/icon/Group 57.png"/>
+            <Grid x:Name="box3_btn_Grid" HorizontalAlignment="Left" Height="30" Margin="203,41,0,0" VerticalAlignment="Top" Width="112" MouseDown="box3_btn_Grid_MouseDown">
+                <Rectangle x:Name="Discord_sub_Rect" HorizontalAlignment="Center" Height="30" VerticalAlignment="Center" Width="112" Fill="#FF2787F5" RadiusX="10" RadiusY="10"/>
+                <Label x:Name="box3_lbl" Content="Перейти" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Grid>
+            <Grid x:Name="box3_grid_Desc" HorizontalAlignment="Center" Height="80" Margin="0,96,0,0" VerticalAlignment="Top" Width="289">
+                <Rectangle HorizontalAlignment="Center" Height="80" VerticalAlignment="Center" Width="289" Fill="#FF292929" RadiusX="10" RadiusY="10"/>
+            </Grid>
+        </Grid>
+        <Grid x:Name="box4_Grid" HorizontalAlignment="Left" Height="186" Margin="409,237,0,0" VerticalAlignment="Top" Width="341">
+            <Rectangle HorizontalAlignment="Center" Height="186" VerticalAlignment="Top" Width="341" Fill="#B21D1D1D" RadiusX="10" RadiusY="10"/>
+            <Image HorizontalAlignment="Left" Height="60" Margin="26,26,0,0" VerticalAlignment="Top" Width="60" Source="/assets/icon/Group 58.png"/>
+            <Grid x:Name="box4_btn_Grid" HorizontalAlignment="Left" Height="30" Margin="203,41,0,0" VerticalAlignment="Top" Width="112" MouseDown="box4_btn_Grid_MouseDown">
+                <Rectangle x:Name="Patreon_sub_Rect" HorizontalAlignment="Center" Height="30" VerticalAlignment="Center" Width="112" Fill="#FFF76754" RadiusX="10" RadiusY="10"/>
+                <Label x:Name="box4_lbl" Content="Подписаться" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Grid>
+            <Grid x:Name="box4_grid_Desc" HorizontalAlignment="Center" Height="80" Margin="0,96,0,0" VerticalAlignment="Top" Width="289">
+                <Rectangle HorizontalAlignment="Center" Height="80" VerticalAlignment="Center" Width="289" Fill="#FF292929" RadiusX="10" RadiusY="10"/>
+            </Grid>
+        </Grid>
+
+    </Grid>
+</Page>
