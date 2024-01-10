@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -104,6 +105,7 @@ namespace BiOnline_launcher_dev_ver
             Play_Label.Foreground = new SolidColorBrush(Color.FromRgb(105, 105, 106));
             Links_Label.Foreground = new SolidColorBrush(Color.FromRgb(105, 105, 106));
             Options_Label.Foreground = new SolidColorBrush(Color.FromRgb(105, 105, 106));
+            Process.Start(@"https://bionline.gitbook.io/bionline/group-1/development-diaries");
 
         }
 

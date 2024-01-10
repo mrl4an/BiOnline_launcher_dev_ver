@@ -16,7 +16,7 @@
         </Grid>
         <Grid x:Name="StartPlay_Grid" HorizontalAlignment="Left" Height="186" Margin="72,382,0,0" VerticalAlignment="Top" Width="341">
             <Rectangle HorizontalAlignment="Left" Height="186" Margin="0,0,0,0" VerticalAlignment="Top" Width="341" Fill="#E50F0F10" RadiusX="10" RadiusY="10"/>
-            <Rectangle HorizontalAlignment="Left" Height="62" Margin="23,68,0,0" VerticalAlignment="Top" Width="295" Fill="#FF007BFF" RadiusX="10" RadiusY="10"/>
+            <Rectangle HorizontalAlignment="Left" Height="62" Margin="23,68,0,0" VerticalAlignment="Top" Width="295" Fill="#FF007BFF" RadiusX="10" RadiusY="10" MouseDown="Rectangle_MouseDown"/>
             <Label x:Name="Start_Label" Style="{StaticResource AqumFont}" Content="PLAY" HorizontalAlignment="Center" Height="19" VerticalAlignment="Top" Width="44" Foreground="White" Padding="0,0,0,0" Margin="0,90,0,0" HorizontalContentAlignment="Center" FontSize="16"/>
             <TextBlock x:Name="BuildInfoTextBlock" Style="{StaticResource AqumFont}" HorizontalAlignment="Left" Height="23" Margin="8,11,0,0" TextWrapping="Wrap" Text="ModPack Version 0.5" VerticalAlignment="Top" Width="74" Foreground="#FF69696A" FontSize="9"/>
             <Grid x:Name="miniGridfortwoicon" HorizontalAlignment="Left" Height="38" Margin="253,0,0,0" VerticalAlignment="Top" Width="88">

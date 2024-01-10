@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,24 +10,20 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace BiOnline_launcher_dev_ver
 {
     /// <summary>
-    /// Логика взаимодействия для PlayPage.xaml
+    /// Логика взаимодействия для w682372.xaml
     /// </summary>
-    public partial class PlayPage : Page
+    public partial class w682372 : Window
     {
-        public PlayPage()
+        public w682372()
         {
             InitializeComponent();
-        }
+            MainFrame.Content = new choicePlatform_Window();
 
-        private void Rectangle_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            Process.Start(config.DefaultStartGame);
         }
     }
 }

@@ -20,7 +20,10 @@
     <None Remove="assets\icon\PlayIcon.png" />
     <None Remove="assets\icon\SettingsIcon.png" />
     <None Remove="assets\icon\SettingsIcon2.png" />
+    <None Remove="assets\icon\steam_icon.png" />
+    <None Remove="assets\icon\stupid_smile.png" />
     <None Remove="assets\icon\SupportIcon.png" />
+    <None Remove="assets\icon\torrent_icon.png" />
     <None Remove="assets\img\BackMenu.png" />
     <None Remove="assets\img\rectanglePlay.png" />
   </ItemGroup>
@@ -71,7 +74,16 @@
     <Resource Include="assets\icon\SettingsIcon2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="assets\icon\steam_icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="assets\icon\stupid_smile.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="assets\icon\SupportIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="assets\icon\torrent_icon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="assets\img\BackMenu.png">

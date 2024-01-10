@@ -12,5 +12,4 @@
     <Style x:Key="Button Border" TargetType="Button">
         <Setter Property="Border.CornerRadius" Value="10"/>
     </Style>
-
 </ResourceDictionary>

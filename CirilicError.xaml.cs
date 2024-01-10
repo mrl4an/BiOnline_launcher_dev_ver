@@ -10,21 +10,21 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace BiOnline_launcher_dev_ver
 {
     /// <summary>
-    /// Логика взаимодействия для StartUp_Window.xaml
+    /// Логика взаимодействия для CirilicError.xaml
     /// </summary>
-    public partial class StartUp_Window : Window
+    public partial class CirilicError : Page
     {
-        public StartUp_Window()
+        public CirilicError(string ErrorText)
         {
+            
             InitializeComponent();
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.Show();
-            this.Close();
+            ErrorDesc.Content = ErrorText;
         }
     }
 }
