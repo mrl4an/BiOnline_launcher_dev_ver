@@ -1,0 +1,15 @@
+﻿<Page x:Class="BiOnline_launcher_dev_ver.OptionsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BiOnline_launcher_dev_ver"
+      mc:Ignorable="d" 
+      d:DesignHeight="642" d:DesignWidth="765"
+      Title="OptionsPage">
+
+    <Grid>
+        <Label Content="В разработке" HorizontalAlignment="Left" Height="62" Margin="10,10,0,0" VerticalAlignment="Top" Width="296" FontSize="36" Foreground="White"/>
+
+    </Grid>
+</Page>

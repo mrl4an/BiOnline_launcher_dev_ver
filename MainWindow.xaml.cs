@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -105,7 +106,8 @@ namespace BiOnline_launcher_dev_ver
             Play_Label.Foreground = new SolidColorBrush(Color.FromRgb(105, 105, 106));
             Links_Label.Foreground = new SolidColorBrush(Color.FromRgb(105, 105, 106));
             Options_Label.Foreground = new SolidColorBrush(Color.FromRgb(105, 105, 106));
-            Process.Start(@"https://bionline.gitbook.io/bionline/group-1/development-diaries");
+            var url = @"https://bionline.gitbook.io/bionline/group-1/development-diaries";
+            Process.Start(new ProcessStartInfo(url) { UseShellExecute = true });
 
         }
 
@@ -151,6 +153,8 @@ namespace BiOnline_launcher_dev_ver
 
         private void OptionsGrid_MouseDown(object sender, MouseButtonEventArgs e)
         {
+            if (!choice_Options_Label)
+                ContentFrame.Content = new OptionsPage();
             choice_Options_Label = true;
             Options_Label.Foreground = new SolidColorBrush(Color.FromRgb(255, 255, 255));
 

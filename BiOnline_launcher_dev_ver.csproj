@@ -10,12 +10,14 @@
   <ItemGroup>
     <None Remove="assets\fonts\Aqum.ttf" />
     <None Remove="assets\icon\close.png" />
+    <None Remove="assets\icon\close_active.png" />
     <None Remove="assets\icon\Group 56.png" />
     <None Remove="assets\icon\Group 57.png" />
     <None Remove="assets\icon\Group 58.png" />
     <None Remove="assets\icon\Group 59.png" />
     <None Remove="assets\icon\Links.png" />
     <None Remove="assets\icon\minimize.png" />
+    <None Remove="assets\icon\minimize_active.png" />
     <None Remove="assets\icon\NewsIcon.png" />
     <None Remove="assets\icon\PlayIcon.png" />
     <None Remove="assets\icon\SettingsIcon.png" />
@@ -29,6 +31,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="assets\icon\close_active.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="assets\icon\Group 58.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
@@ -47,6 +52,12 @@
     <Resource Include="assets\icon\Group 59.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="assets\icon\minimize.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="assets\icon\minimize_active.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="assets\icon\SettingsIcon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
@@ -63,9 +74,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="assets\icon\Links.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="assets\icon\minimize.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="assets\icon\NewsIcon.png">

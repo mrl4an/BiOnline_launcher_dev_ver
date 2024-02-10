@@ -31,14 +31,44 @@
         </Grid>
         <Grid x:Name="min_maxGrid" HorizontalAlignment="Left" Height="17" Margin="943,0,0,0" VerticalAlignment="Top" Width="81">
             <Grid x:Name="minGrid" HorizontalAlignment="Left" Height="12" Margin="0,5,0,0" VerticalAlignment="Top" Width="12" MouseLeftButtonDown="minGrid_MouseLeftButtonDown">
-                <Grid.Background>
-                    <ImageBrush ImageSource="/assets/icon/minimize.png" Stretch="None"/>
-                </Grid.Background>
+                <Grid.Style>
+                    <Style TargetType="Grid">
+                        <Setter Property="Background">
+                            <Setter.Value>
+                                <ImageBrush ImageSource="assets/icon/minimize.png" Stretch="None"/>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background">
+                                    <Setter.Value>
+                                        <ImageBrush ImageSource="assets/icon/minimize_active.png" Stretch="None"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Grid.Style>
             </Grid>
             <Grid x:Name="closeGrid" HorizontalAlignment="Left" Height="12" Margin="43,5,0,0" VerticalAlignment="Top" Width="12" MouseLeftButtonDown="closeGrid_MouseLeftButtonDown">
-                <Grid.Background>
-                    <ImageBrush ImageSource="/assets/icon/close.png" Stretch="Fill"/>
-                </Grid.Background>
+                <Grid.Style>
+                    <Style TargetType="Grid">
+                        <Setter Property="Background">
+                            <Setter.Value>
+                                <ImageBrush ImageSource="assets/icon/close.png" Stretch="Fill"/>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background">
+                                    <Setter.Value>
+                                        <ImageBrush ImageSource="assets/icon/close_active.png" Stretch="Fill"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Grid.Style>
             </Grid>
         </Grid>
 

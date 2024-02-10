@@ -20,18 +20,13 @@
             <Label x:Name="Start_Label" Style="{StaticResource AqumFont}" Content="PLAY" HorizontalAlignment="Center" Height="19" VerticalAlignment="Top" Width="44" Foreground="White" Padding="0,0,0,0" Margin="0,90,0,0" HorizontalContentAlignment="Center" FontSize="16"/>
             <TextBlock x:Name="BuildInfoTextBlock" Style="{StaticResource AqumFont}" HorizontalAlignment="Left" Height="23" Margin="8,11,0,0" TextWrapping="Wrap" Text="ModPack Version 0.5" VerticalAlignment="Top" Width="74" Foreground="#FF69696A" FontSize="9"/>
             <Grid x:Name="miniGridfortwoicon" HorizontalAlignment="Left" Height="38" Margin="253,0,0,0" VerticalAlignment="Top" Width="88">
-                <Grid x:Name="SettingsGrid" HorizontalAlignment="Left" Height="27" VerticalAlignment="Bottom" Width="28">
+                <Grid x:Name="SettingsGrid" HorizontalAlignment="Left" Height="27" VerticalAlignment="Bottom" Width="28" Margin="36,0,0,0" MouseDown="SettingsGrid_MouseDown">
                     <Grid.Background>
                         <ImageBrush ImageSource="/assets/icon/SettingsIcon.png"/>
                     </Grid.Background>
                 </Grid>
-                <Grid x:Name="SupportGrid" HorizontalAlignment="Left" Height="27" VerticalAlignment="Bottom" Width="28" Margin="38,0,0,0">
-                    <Grid.Background>
-                        <ImageBrush ImageSource="/assets/icon/SupportIcon.png"/>
-                    </Grid.Background>
-                </Grid>
             </Grid>
-            <ProgressBar x:Name="ProgressDownload" HorizontalAlignment="Left" Height="20" Margin="27,145,0,0" VerticalAlignment="Top" Width="295" BorderBrush="{x:Null}" Background="#FF69696A" Foreground="White" SmallChange="1" Value="108" BorderThickness="0,0,0,0"/>
+            <ProgressBar x:Name="ProgressDownload" HorizontalAlignment="Left" Height="20" Margin="27,145,0,0" VerticalAlignment="Top" Width="295" BorderBrush="{x:Null}" Background="#FF69696A" Foreground="White" SmallChange="1" Value="90" BorderThickness="0,0,0,0"/>
             <Label x:Name="ProgressInfo_Label" Style="{StaticResource AqumFont}" Content="Done" HorizontalAlignment="Left" Height="11" Margin="27,167,0,0" VerticalAlignment="Top" Width="295" Foreground="#FF69696A" Padding="0,0,0,0" FontSize="9" FontStretch="SemiExpanded"/>
 
 

@@ -17,7 +17,11 @@
 
         <Rectangle HorizontalAlignment="Center" Height="186" Margin="0,97,0,0" VerticalAlignment="Top" Width="558" RadiusX="10" RadiusY="10" Fill="#FF1D1D1D"/>
         <Label Content="Ошибка!"  Style="{StaticResource AqumFont}" HorizontalAlignment="Center" Height="52" Margin="0,25,0,0" VerticalAlignment="Top" Width="118" Foreground="White" FontSize="20"/>
-        <Label x:Name="ErrorDesc" Content="Label" Style="{StaticResource AqumFont}" Height="100" Width="432" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-
+        <Label x:Name="ErrorDesc" Content="Label" Style="{StaticResource AqumFont}" Height="100" Width="454" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Grid x:Name="closeGrid" HorizontalAlignment="Left" Height="20" Margin="650,5,0,0" VerticalAlignment="Top" Width="20" MouseLeftButtonDown="closeGrid_MouseLeftButtonDown">
+            <Grid.Background>
+                <ImageBrush ImageSource="/assets/icon/close.png" Stretch="Fill"/>
+            </Grid.Background>
+        </Grid>
     </Grid>
 </Page>

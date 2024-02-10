@@ -16,20 +16,13 @@ using System.Windows.Shapes;
 namespace BiOnline_launcher_dev_ver
 {
     /// <summary>
-    /// Логика взаимодействия для CirilicError.xaml
+    /// Логика взаимодействия для OptionsPage.xaml
     /// </summary>
-    public partial class CirilicError : Page
+    public partial class OptionsPage : Page
     {
-        public CirilicError(string ErrorText)
+        public OptionsPage()
         {
-            
             InitializeComponent();
-            ErrorDesc.Content = ErrorText;
-        }
-        private void closeGrid_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
-        {
-           w682372 w682372 = new w682372();
-            w682372.Show();
         }
     }
 }
