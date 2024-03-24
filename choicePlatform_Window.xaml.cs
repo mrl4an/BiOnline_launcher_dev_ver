@@ -78,9 +78,10 @@ namespace BiOnline_launcher_dev_ver
 
         private void Pirate_Version_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            config.DefaultStartGame = @"C:\RimWorld\RimWorldWin64.exe";
+            config.DefaultStartGame = @"C:\bionline\Rimworld\RimWorld\RimWorldWin64.exe";
             if (CheckCirilicPirate())
             {
+                config.IsPirate = true;
                 MainWindow mainWindow = new MainWindow();
                 mainWindow.Show();
                 Window.GetWindow(this).Close();

@@ -28,8 +28,7 @@ namespace BiOnline_launcher_dev_ver
         }
         private void closeGrid_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-           w682372 w682372 = new w682372();
-            w682372.Show();
+            NavigationService.GoBack();
         }
     }
 }
