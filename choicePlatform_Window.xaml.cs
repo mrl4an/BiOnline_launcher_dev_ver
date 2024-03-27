@@ -31,9 +31,8 @@ namespace BiOnline_launcher_dev_ver
         public static bool CheckCirilicAppData()
         {
             bool result = false;
-            if (Directory.Exists(config.AppDataPath))
-                if (!ContainsRussianCharacters(config.AppDataPath))
-                    result = true;
+            if (!ContainsRussianCharacters(config.ComputerName))
+                result = true;
 
             return result;
         }

@@ -48,7 +48,6 @@ namespace BiOnline_launcher_dev_ver
                         var a = await response.Content.ReadAsStringAsync();
                         Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(a);
                         config.ActualVersion = myDeserializedClass.game_version;
-                        MessageBox.Show(config.ActualVersion);
                         using (StreamReader sr = new StreamReader(Version_File))
                         {
                             string line = sr.ReadLine();
@@ -100,8 +99,38 @@ namespace BiOnline_launcher_dev_ver
             InitializeComponent();
         }
 
+        public static async Task UpdateModsConfig()
+        {
+            try
+            {
+                if (File.Exists(config.AppDataPath))
+                    File.Delete(config.AppDataPath);
+                byte[] data;
+                using (var client = new HttpClient())
+                {
+                    using (HttpResponseMessage response = await client.GetAsync(config.ModsConfigLink))
+                    {
+                        using (HttpContent content = response.Content)
+                        {
+                            data = await content.ReadAsByteArrayAsync();
+
+                            using (Stream contentStream = await response.Content.ReadAsStreamAsync(),
+                                        fileStream = new FileStream(config.AppDataPath, FileMode.Create, FileAccess.Write, FileShare.None, 4096, true)
+                                        {
+
+                                        })
+                            {
+                                await contentStream.CopyToAsync(fileStream);
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex) { MessageBox.Show(ex.ToString()); };
+        }
         private async void Rectangle_MouseDown(object sender, MouseButtonEventArgs e)
         {
+            await UpdateModsConfig();
             if (config.IsPirate == false)
                 Process.Start(config.DefaultStartGame);
             else
